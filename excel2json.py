@@ -240,38 +240,3 @@ if __name__ == '__main__':
     gError_log = open("error_log.txt", "w" )
     ExcelToJson(dest)
     gError_log.close()
-   #StartDoExcel2Json("E:\skill\Skill.xlsx", "Skill")
-   #Analytical({"sheet_name":"Skill", "row":0, "result": "value*0.5"})
-'''
-    list = ReviseValue(eval("json.loads(\"[1,2,3]\")"))
-    print  list
-
-   congfig =  file("Config.json")
-   str_cfg = json.load(congfig)
-   for k, value in str_cfg.items():
-        print k, value
-
-
-
-   XYZs = [(1.0, 2.0, -0.5),(0.6, 1.5, 1.1),(-0.8, 0.7, 1.5),(-1.5, 0.3, 0.4)]
-   XYZ = namedtuple('a', ['x', 'y', 'z'])
-   result = []
-   for value in XYZs:
-        output = XYZ._make(value)
-        result.append(output)
-   #print output
-   print json.dumps(result, indent=1)
-
-
-    test = OrderedDict([(u'sheet', u'Skill'), (u'keyCol', 0), (u'valueCol', 0), (u'result', u'value')])
-    for k, v in test.items():
-        print k,v
-
-    other = []
-    value = 2
-    for i in range(3):
-        print i
-        other.append(i)
-    print eval("max(other[1], other[2])")
-
-    '''
