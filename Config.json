@@ -1,0 +1,138 @@
+[
+    {
+        "excel_path": "D:/CAT/cat_server/work_help_script/excel2Json/Skill.xlsx",
+        "main_sheet": "Skill",
+        "output_path": "D:/CAT/cat_server/work_help_script/excel2Json/Skill",
+        "is_merge":1
+    },
+    {
+        "id": {
+            "sheet": "Skill",
+            "valueCol": 0,
+            "result": "value"
+        },
+        "inDisMin": {
+            "sheet": "Skill",
+            "valueCol": 9,
+            "result": "value / 10000"
+        },
+        "inDisMax": {
+            "sheet": "Skill",
+            "valueCol": 9,
+            "result": "value / 10000"
+        },
+        "cd": {
+            "sheet": "Skill",
+            "valueCol": 4,
+            "result": "value"
+        },
+        "phases": [
+            {
+                "type": 1,
+                "sheet": "skillData",
+                "commonCol": 1
+            },
+            {
+                "duration": {
+                    "sheet": "skillData",
+                    "valueCol": 4,
+                    "result": "value"
+                },
+                "collision": {
+                    "hitId": {
+                        "sheet": "skillData",
+                        "valueCol": 2,
+                        "result": "value"
+                    },
+                    "hitType": {
+                        "sheet": "skillData",
+                        "valueCol": 24,
+                        "result": "value"
+                    },
+                    "controlType": {
+                        "sheet": "skillData",
+                        "valueCol": 23,
+                        "result": "value"
+                    },
+                    "valIdx": {
+                        "sheet": "skillData",
+                        "valueCol": 2,
+                        "result": "value - 1"
+                    },
+                    "deltaTime": {
+                        "sheet": "skillData",
+                        "valueCol": 4,
+                        "result": "value"
+                    },
+                    "r": {
+                        "sheet": "skillData",
+                        "valueCol": 26,
+                        "result": "value"
+                    },
+                    "circles": [
+                        {
+                            "type": 2,
+                            "sheet": "skillData",
+                            "commonCol": 28,
+                            "keys": [
+                                "x",
+                                "y",
+                                "z"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "vals": [
+            {
+                "type": 1,
+                "sheet": "skillData",
+                "commonCol": 1
+            },
+            {
+                "atk": {
+                    "sheet": "skillData",
+                    "valueCol": 9,
+                    "result": "value"
+                },
+                "atkPer": {
+                    "sheet": "skillData",
+                    "valueCol": 8,
+                    "result": "value / 100"
+                },
+                "superArmorDmg": {
+                    "sheet": "skillData",
+                    "valueCol": 10,
+                    "result": "value"
+                },
+                "superArmorIgnore": {
+                    "sheet": "skillData",
+                    "valueCol": 7,
+                    "result": "value"
+                },
+                "control": {
+                    "sheet": "skillData",
+                    "valueCol": 41,
+                    "result": "value"
+                },
+                "controlDuration": {
+                    "sheet": "skillData",
+                    "valueCol": 45,
+                    "other[0]": 46,
+                    "result": "max(value, other[0])"
+                },
+                "buffs": {
+                    "sheet": "skillData",
+                    "valueCol": 13,
+                    "result": "value"
+                },
+                "dots": {
+                    "sheet": "skillData",
+                    "valueCol": 14,
+                    "result": "value"
+                }
+            }
+        ]
+    }
+]
